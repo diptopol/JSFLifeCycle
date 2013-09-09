@@ -1,0 +1,19 @@
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+              version="2.0">
+
+    <lifecycle>
+        <phase-listener>net.therap.lifecycle.listener.LifeCycleListener</phase-listener>
+    </lifecycle>
+
+    <converter>
+        <converter-id>CustomConverter</converter-id>
+        <converter-class>net.therap.lifecycle.converter.CustomConverter</converter-class>
+    </converter>
+    <validator>
+        <validator-id>CustomValidator</validator-id>
+        <validator-class>net.therap.lifecycle.validator.CustomValidator</validator-class>
+    </validator>
+
+</faces-config>
